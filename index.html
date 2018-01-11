@@ -5,6 +5,9 @@
 			.a1 {
 				font-size: 25px;
 			}
+			.i1 {
+				display: inline-block;
+			}
 		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type='text/javascript'>
@@ -23,8 +26,6 @@
 					document.getElementById("rollMessage1").innerHTML = "Try again";
 				}
 			}
-			
-			
 		</script>
 	</head>
 	<body>
@@ -35,7 +36,7 @@
 			<div id="rollResults" class="a1">
 				000 
 			</div>
-			<div id="rollMessage1" class="a1"></div>
+			<div id="rollMessage1" class="a1 i1"></div>
 			<div>
 				<button onclick="roll();">
 					Push me to see if you win!
