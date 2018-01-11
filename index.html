@@ -5,8 +5,6 @@
 			.a1 {
 				font-size: 25px; 
 				width:100px;
-			}
-			.i1 {
 				display: inline-block;
 			}
 		</style>
@@ -31,6 +29,15 @@
 				}
 				else if (c < a && c < b) {
 					document.getElementById("rollMessage1").innerHTML = "You fell down a well and Medusa ate your head! Try again.";
+				}
+				else if (a > b && a > c) {
+					document.getElementById("rollMessage1").innerHTML = "You were lifted into heaven by, lets call them Wink Angels Wink! Try again.";
+				}
+				else if (b > a && b > c) {
+					document.getElementById("rollMessage1").innerHTML = "Your donated all your time to charity and never gambled again! Don't Try again.";
+				}
+				else if (c > a && c > b) {
+					document.getElementById("rollMessage1").innerHTML = "You meet Santa and became one of his helpers! Try again.";
 				}
 				else {
 					document.getElementById("rollMessage1").innerHTML = "Try again.";
