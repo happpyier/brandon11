@@ -10,12 +10,22 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type='text/javascript'>
 			<!-- Your Javascript Goes Here! -->
-			function roll(){
-			var a = Math.floor((Math.random() * 9) + 1);
-			var b = Math.floor((Math.random() * 9) + 1);
-			var c = Math.floor((Math.random() * 9) + 1);
+			var a;
+			var b;
+			var c'
+			function roll() {
+			a = Math.floor((Math.random() * 9) + 1);
+			b = Math.floor((Math.random() * 9) + 1);
+			c = Math.floor((Math.random() * 9) + 1);
 			document.getElementById("rollResults").innerHTML = a+""+b+""+c;
 			}
+			if (a == b && a == c) {
+				document.getElementById("rollMessage").innerHTML = "Winner Winner Chicken Dinner!";
+			}
+			else {
+				document.getElementById("rollMessage").innerHTML = "Try again!";
+			}
+			
 		</script>
 	</head>
 	<body>
