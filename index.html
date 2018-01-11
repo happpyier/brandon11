@@ -3,6 +3,9 @@
 	<head>
 		<style>
 			<!-- Your Css Goes Here! -->
+			.a1 {
+				size: 25px;
+			}
 		</style>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type='text/javascript'>
@@ -20,9 +23,10 @@
 			<div id="mainBody">
 				This is my Javascript Slot Machine
 			</div>
-			<div id="rollResults">
-				000
+			<div id="rollResults" class="a1">
+				000 
 			</div>
+			<div id="rollMessage" class="a1"></div>
 			<div>
 				<button onclick="roll();">
 					Push me to see if you win!
