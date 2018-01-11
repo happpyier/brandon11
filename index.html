@@ -21,10 +21,19 @@
 				c = Math.floor((Math.random() * 9) + 1);
 				document.getElementById("rollResults").innerHTML = a+''+b+''+c;
 				if (a == b && a == c) {
-					document.getElementById("rollMessage1").innerHTML = "Winner Winner Chicken Dinner";
+					document.getElementById("rollMessage1").innerHTML = "Winner Winner Chicken Dinner!";
+				}
+				else if (a < b && a < c) {
+					document.getElementById("rollMessage1").innerHTML = "You stubbed your toe and got eaten by a Giant! Try again.";
+				}
+				else if (b < a && b < c) {
+					document.getElementById("rollMessage1").innerHTML = "A tiny plastic ken doll beat you up and stole your wallet! Try again.";
+				}
+				else if (c < a && c < b) {
+					document.getElementById("rollMessage1").innerHTML = "You fell down a well and Medusa ate your head! Try again.";
 				}
 				else {
-					document.getElementById("rollMessage1").innerHTML = "Try again";
+					document.getElementById("rollMessage1").innerHTML = "Try again.";
 				}
 			}
 		</script>
